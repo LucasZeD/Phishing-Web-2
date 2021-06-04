@@ -18,7 +18,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Phishing Web Security</a>       
+        <a class="navbar-brand" href="index_main.html">Phishing Web Security</a>       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,33 +26,35 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item m-auto">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index_main.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Sobre</a>
+                    <a class="nav-link" href="index_main.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Sites Protegidos</a>
+                    <a class="nav-link" href="index_main.html">Sites Protegidos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="survey.html" target="_blank">Questionário</a>
+                    <a class="nav-link" href="../Questionário de Vulnerabilidade (RF-03)/HTML/survey.html" target="_blank">Questionário</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index_avaliacao.html">Avaliação e Sugestão</a>
+                    <a class="nav-link" href="../Espacoavaliacoes_rf04/index_avaliacao.html">Avaliação e Sugestão</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Login/Cadastro</a>
+                    <a class="nav-link" href="index_main.html">Login/Cadastro</a>
                 </li>
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Buscar Site...">
-                    <div class="input-group-append">
+                    <a href="contador.html" target="popup-example" onClick="javascript:open('https://phishing-websecurity.vercel.app/', 'popup-example', 'height='+400+',width='+400+'resizable=no')">
+                        <div class="input-group-append">
                         <button type="button" class="btn btn-secondary btn-number">
                             <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </form>
         </div>
@@ -187,7 +189,11 @@
             <div class="emdestaqueheader">
                 <section class="jumbotron text-center">
                     <div class="container">
-                        <h1 class="jumbotron-heading"><b>Número de pessoas protegidas pelo site</b></h1>                                                                                 
+                        <h1 class="jumbotron-heading"><b>Número de pessoas protegidas pelo site</b></h1>
+                        <div id="tela">  
+                            <div id="zero">0</div>     
+                        </div>
+                        <button onClick="imprimeAvaliacoes()" id="btnAtualizar">Atualizar</button>                                                                             
                     </div>
                 </section>
             </div>
@@ -220,7 +226,7 @@
         </div>
     </div> 
 </footer>
-
+    <script src="script_contador.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

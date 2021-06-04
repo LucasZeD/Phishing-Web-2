@@ -30,6 +30,11 @@
 .logobottom{
     text-align: end;
 }
+#tela{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+}
 
 
 footer {
